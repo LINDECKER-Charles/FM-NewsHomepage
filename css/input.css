@@ -11,7 +11,7 @@
   --font-sans: "Inter";
 
   --text-base: 15px;
-  --text-big: 39px;
+  --text-big: 48px;
 
 
   --breakpoint-mobile: 375px;
@@ -39,7 +39,7 @@
     @apply flex flex-col gap-1;
   }
   aside>section>p{
-    @apply text-xs text-grayish-blue-500;
+    @apply text-sm text-grayish-blue-500;
   }
   aside>section>h3{
     @apply text-white text-lg;
