@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="stylesheet" href="css/output.css">
+  <script defer src="./js/script.js"></script>  
+</head>
+<body class="bg-off-white py-12 px-8 sm:px-12 md:px-24 lg:px-32 xl:px-42 2xl:px-64 text-base font-sans">
+  <header class="w-full py-12 text-grayish-blue-800">
+    <nav class="w-full flex flex-row justify-between items-center">
+      <figure>
+        <img class="cursor-pointer" src="./assets/images/logo.svg" alt="Main logo">
+      </figure>
+      <ul class="flex flex-row gap-12">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex flex-col gap-12">
+    <section class="flex flex-col sm:flex-row gap-4 w-full sm:h-2/3">
+      <article class="w-2/3 flex flex-col justify-between">
+        <figure>
+          <img class="hidden sm:block" src="./assets/images/image-web-3-desktop.jpg" alt="image design">
+          <img class="block sm:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="image design">
+        </figure>
+        <section class="flex flex-col sm:flex-row py-6 justify-between">
+          <h1 class="text-grayish-blue-900 font-bold w-5/12 flex justify-start text-big leading-none pr-4">The Bright Future of Web 3.0?</h1>
+          <div class="w-1/2 flex flex-col gap-4 justify-between ">
+            <p class="text-grayish-blue-800 text-xs leading-loose">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button class="font-bold uppercase bg-red tracking-widest p-2 px-2 text-xs w-3/6 hover:bg-orange">Read more</button>
+          </div>
+        </section>
+      </article>
+      <aside class="w-1/3 bg-grayish-blue-900 p-4 py-6 flex flex-col justify-between">
+        <h2 class="text-orange text-3xl">New</h2>
+        <section>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </section>
+        <hr class="text-grayish-blue-800">
+        <section>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </section>
+        <hr class="text-grayish-blue-800">
+        <section>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </section>
+      </aside>
+    </section>
+    
+    <section class="topics flex flex-row gap-6">
+      <article>
+        <figure>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Image d'ordinateur rétro">
+        </figure>
+        <section>
+          <h4>01</h4>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </section>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/images/image-top-laptops.jpg" alt="Image de clavier gamer">
+        </figure>
+        <section>
+          <h4>02</h4>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </section>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="Image d'une mannette de jeu">
+        </figure>
+        <section>
+          <h4>03</h4>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </section>
+      </article>
+    </section>
+  </main>
+  <footer class="sr-only text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/charles-lindecker/" class="text-blue-500">Charles LINDECKER</a>.
+  </footer>
+</body>
+</html>
