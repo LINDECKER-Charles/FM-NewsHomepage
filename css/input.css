@@ -27,6 +27,7 @@
 
 }
 
+
 @layer components {
   button:hover{
     @apply transition-all duration-100 ease-in cursor-pointer;

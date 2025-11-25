@@ -13,37 +13,50 @@
   <link rel="stylesheet" href="css/output.css">
   <script defer src="./js/script.js"></script>  
 </head>
-<body class="bg-off-white py-12 px-8 sm:px-12 md:px-24 lg:px-32 xl:px-42 2xl:px-64 text-base font-sans">
-  <header class="w-full py-12 text-grayish-blue-800">
+<body class="bg-off-white px-4 sm:px-12 md:px-24 lg:px-32 xl:px-42 2xl:px-64 text-base font-sans pb-8 w-12/12 sm:w-full overflow-x-hidden ">
+  <header class=" sm:w-full py-12 text-grayish-blue-800">
     <nav class="w-full flex flex-row justify-between items-center">
       <figure>
         <img class="cursor-pointer" src="./assets/images/logo.svg" alt="Main logo">
       </figure>
-      <ul class="flex flex-row gap-12">
+      <figure id="menu-burger" class="sm:hidden flex transition-transform duration-300">
+        <img class="cursor-pointer transition-all duration-300" src="./assets/images/icon-menu.svg">
+        <img class="hidden cursor-pointer transition-all duration-300 rotate-90" src="./assets/images/icon-menu-close.svg">
+      </figure>
+      <ul class="hidden sm:flex flex-row gap-12">
         <li><a href="#">Home</a></li>
         <li><a href="#">New</a></li>
         <li><a href="#">Popular</a></li>
         <li><a href="#">Trending</a></li>
         <li><a href="#">Categories</a></li>
       </ul>
+      <ul id="mobile-menu"
+    class="sm:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl 
+           translate-x-full transition-transform duration-300 ease-in-out p-8 flex flex-col gap-6">
+        <li><a href="#" class="text-xl">Home</a></li>
+        <li><a href="#" class="text-xl">New</a></li>
+        <li><a href="#" class="text-xl">Popular</a></li>
+        <li><a href="#" class="text-xl">Trending</a></li>
+        <li><a href="#" class="text-xl">Categories</a></li>
+      </ul>
     </nav>
   </header>
   <main class="flex flex-col gap-12">
     <section class="flex flex-col sm:flex-row gap-4 w-full sm:h-2/3">
-      <article class="w-2/3 flex flex-col justify-between">
+      <article class="sm:w-2/3 flex flex-col justify-between">
         <figure>
           <img class="hidden sm:block" src="./assets/images/image-web-3-desktop.jpg" alt="image design">
           <img class="block sm:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="image design">
         </figure>
-        <section class="flex flex-col sm:flex-row py-6 justify-between">
-          <h1 class="text-grayish-blue-900 font-bold w-5/12 flex justify-start text-big leading-none pr-4">The Bright Future of Web 3.0?</h1>
-          <div class="w-1/2 flex flex-col gap-4 justify-between ">
+        <section class="flex flex-col sm:flex-row py-6 justify-between gap-4 sm:gap-0">
+          <h1 class="text-grayish-blue-900 font-bold sm:w-5/12 flex justify-start text-big leading-none pr-4">The Bright Future of Web 3.0?</h1>
+          <div class="sm:w-1/2 flex flex-col gap-4 justify-between ">
             <p class="text-grayish-blue-800 text-xs leading-loose">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-            <button class="font-bold uppercase bg-red tracking-widest p-2 px-2 text-xs w-3/6 hover:bg-orange">Read more</button>
+            <button class="font-bold uppercase bg-red tracking-widest p-2 px-2 text-xs w-2/6 sm:w-3/6 hover:bg-orange">Read more</button>
           </div>
         </section>
       </article>
-      <aside class="w-1/3 bg-grayish-blue-900 p-4 py-6 flex flex-col justify-between">
+      <aside class="sm:w-1/3 bg-grayish-blue-900 p-4 py-6 flex flex-col justify-between gap-8 sm:gap-0">
         <h2 class="text-orange text-3xl">New</h2>
         <section>
           <h3>Hydrogen VS Electric Cars</h3>
@@ -62,7 +75,7 @@
       </aside>
     </section>
     
-    <section class="topics flex flex-row gap-6">
+    <section class="topics flex flex-col sm:flex-row gap-6">
       <article>
         <figure>
           <img src="./assets/images/image-retro-pcs.jpg" alt="Image d'ordinateur rétro">
